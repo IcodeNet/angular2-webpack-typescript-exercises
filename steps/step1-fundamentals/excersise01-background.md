@@ -1,4 +1,4 @@
-#Angular Components
+#**Angular Components**
 
 An angular2 application is a tree of components - a composition tree.
 Directives and Components are the fundamental building blocks of an Angular2 application.
@@ -27,6 +27,7 @@ To build an Angular 2 application we define a set of components, for every UI el
 An application will always have a root component that contains all other components.
 So an Angular 2 application is a component tree,like the following.
 
+![Angular Component Tree](assets/AngularComponentTree.png)
 //TODO
 
 A component has input and output properties.
