@@ -28,12 +28,11 @@ An application will always have a root component that contains all other compone
 So an Angular 2 application is a component tree,like the following.
 
 ![Angular Component Tree](assets/AngularComponentTree.png)
-//TODO
 
 A component has input and output properties.
 Those will be defined in the component decorator `@Component()` or using property decorators (`@Input()` and `@Output()`).
 
-//TODO
+` Code example`
 
 ## Input - Output
 Input and output properties will form the public API of a component.
