@@ -1,7 +1,19 @@
 #**Angular Components**
 
+The Component is the main building block we use to create the user interface of our applications with Angular 2.
+
+The Component extends the Directive, which is the primitive for attaching behavioural and structural changes to the DOM. 
+
 An angular2 application is a tree of components - a composition tree.
-Directives and Components are the fundamental building blocks of an Angular2 application.
+
+Components extend Directives by providing additional features, such as a view with an attached
+template, which can be used for rendering composition of directives. Inside the
+template of the view various expressions provide all the 'plumbing' that angular needs to connect the parts.
+
+Any given HTML element may have ONLY a single component but multiple directives on it.
+Directives augment the elements where components are the actual elements in our views.
+
+## Directives and Components are the fundamental building blocks of an Angular2 application.
 
 1. The Top level component is the application it self. The `root component`.
 
@@ -24,7 +36,7 @@ Parents render children when they render.
 
 ## Summary
 To build an Angular 2 application we define a set of components, for every UI element, view, and route.
-An application will always have a root component that contains all other components.
+An application will always have a root component that contains all other components and directives.
 So an Angular 2 application is a component tree,like the following.
 
 ![Angular Component Tree](assets/AngularComponentTree.png)
