@@ -7,13 +7,14 @@ The Component extends the Directive, which is the primitive for attaching behavi
 An angular2 application is a tree of components - a composition tree.
 
 Components extend Directives by providing additional features, such as a view with an attached
-template, which can be used for rendering composition of directives. Inside the
-template of the view various expressions provide all the 'plumbing' that angular needs to connect the parts.
+template, which can be used for rendering a composite of components and directives. Inside the components
+template various expressions provide all the 'plumbing' that angular needs to connect the parts in to a unified Angular 2 application.
 
 Any given HTML element may have ONLY a single component but multiple directives on it.
 Directives augment the elements where components are the actual elements in our views.
 
-## Directives and Components are the fundamental building blocks of an Angular2 application.
+## Directives and Components are the fundamental building blocks of an Angular2 application. The templates of our views are composing different
+directives and Components together in order to deliver fully a functional user interface to the end user of our application.
 
 1. The Top level component is the application it self. The `root component`.
 
