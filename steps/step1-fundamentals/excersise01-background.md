@@ -11,14 +11,14 @@ template, which can be used for rendering composition of directives. Inside the
 template of the view various expressions provide all the 'plumbing' that angular needs to connect the parts.
 
 Any given HTML element may have ONLY a single component but multiple directives on it.
-Directives augment the elements where components are the actual elements in our views.
+Directives augment the elements whereas components are the actual elements in our views.
 
 ## Directives and Components are the fundamental building blocks of an Angular2 application.
 
 1. The Top level component is the application it self. The `root component`.
 
 2. Components are structured in a parent child tree.
-Parents render children when they render.
+Parents render their children when they render.
 
 3. Any component can be bootstrapped as an application.
 
@@ -32,12 +32,15 @@ Parents render children when they render.
 
 8. Components have well-defined lifecycle i.e their private API
 
-9. They are self-describing in terms of state/data, behaviour and layout.
+9. They are self-describing in terms of 
+    - state/data, 
+    - behaviour and 
+    - layout.
 
 ## Summary
 To build an Angular 2 application we define a set of components, for every UI element, view, and route.
 An application will always have a root component that contains all other components and directives.
-So an Angular 2 application is a component tree,like the following.
+So **an Angular 2 application is a component tree** ,like the following.
 
 ![Angular Component Tree](assets/AngularComponentTree.png)
 
@@ -60,6 +63,6 @@ We can set input properties using property bindings, through square brackets. We
 A component will have a `template`, which describes how the component is rendered on the page
 and how the component can interact with its host DOM element in the following ways:
  * It can listen to its events.
- * It can update its properties.
+ * It can update its properties and attributes.
  * It can invoke methods on it.
 
