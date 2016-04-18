@@ -1,11 +1,11 @@
 #**Angular Components, Directives, dependencies and metadata Decorators**
 
-An Angular2 component is just a javascript object that encapsulates data and behaviour.
+An Angular2 component is just a javascript object that encapsulates data and behaviour. 
 
 in order to render something on a page angular needs to have some details/metadata about the Context.
-    *  What is the tag name that component's code will augment
+    *  What is the tag name that the component's code will augment
     *  what styles are available to the component to use
-    *  what is the visual represenation of the component that will be rendered
+    *  what is the visual represenation of the component when rendered
     * ... and many more
     
     
@@ -15,6 +15,16 @@ in order to render something on a page angular needs to have some details/metada
  
 ##Decorators
 ###A decorator function enables us to add metadata to a class and its members.
+
+The purpose of the decorator is to allow the componnet to be self describing:
+
+* How is tied to a tag in HTML, how is identified
+    ** When we associate an angular component with a tag this will be called the host element 
+* What are component inputs and outputs i.e. what data it needs in terms of input variables that are bound to input controls in its template and what events it will emit.
+    ** If we want our components to interact with the user we must use databinding in them
+* How it draws it self and styles it self
+* What are the dependencies and providers that it depends uppon 
+    ** The template of a component will contain tags for subcomponents those components will be its dependencies. 
 
 To apply a decorator to a class or one of the class members, 
 we place it above the class or member that we want to decorate and invoke
@@ -63,6 +73,32 @@ The minimum information that angular needs to render the abover component is:
     
     
 ##The component selector
+    
+    How a component is identified & used in either HTML or in other component templates si controlled by  the components selector that is passed on the Components decorator.
+    
+          @Component({
+            selector: 'app-header-component',
+            
+            }
+            
+    In the above snippet we have declared that when inside another's components HTML or directly inside an HTML file we will use the `<app-header-component></app-header-component>`  
+
+Angular will map the selector token `selector: 'app-header-component'` in this case to a custom element.
+
+We can have the following selectors:
+
+* `selector : 'app-header-component'`   usage : `<app-header-component></app-header-component>`
+
+* `selector : '.app-header-component'`   usage : `<div class="app-header-component" ></div>`
+
+* `selector : '[app-header-component]'`   usage : `<div app-header-component ></div>`
+
+* `selector : 'div[app-header-component = include]'`   usage : `<div app-header-component = include ></div>`
+
+* `selector : 'li:not[.selected]'`   usage : `<li></li><li class="selected" ></li>`
+
+* `selector : 'app-header-component, .app-header-component, [app-header-component] '`   usage : `any of the above`
+
 
 ##Templates
 
