@@ -54,6 +54,11 @@ This will transpile the TypeScript source code and startup a webpack server on `
  where you can see the running app.
 
 
+### Additional resources and help
+
+- [Angular2 Architecture](https://angular.io/docs/ts/latest/guide/architecture.html#)
+
+
 
 
 
