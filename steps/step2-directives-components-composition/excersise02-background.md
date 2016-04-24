@@ -1,30 +1,32 @@
 #**Angular Components, Directives, dependencies and metadata Decorators**
 
-An Angular2 component is just a javascript object that encapsulates data and behaviour. 
+###An Angular2 component is just a javascript object that encapsulates data and behaviour. 
 
 in order to render something on a page angular needs to have some details/metadata about the Context.
-    *  What is the tag name that the component's code will augment
+    *  What is the tag name that the component's code will augment ex. <app>loading</app>
     *  what styles are available to the component to use
-    *  what is the visual represenation of the component when rendered
-    * ... and many more
+    *  what is the visual represenation of the component when rendered i.e the components `template`
+    * ... and more
     
     
- The Metadata will allow the framework to assemble together both the imperative and declarative instructions and render teh components template on the screen.
+ The Metadata will allow the Angular2 framework to assemble together both the imperative and declarative instructions 
+ and render the component's template on the screen.
+ 
  
  Metadata are provided by means of decorator functions to the class components and its members. 
  
 ##Decorators
 ###A decorator function enables us to add metadata to a class and its members.
 
-The purpose of the decorator is to allow the componnet to be self describing:
+The purpose of the decorator is to allow the componnet to be `self describing`:
 
-* How is tied to a tag in HTML, how is identified
-    ** When we associate an angular component with a tag this will be called the host element 
+* How the component is tied to a tag in HTML, how is identified <contact></contact>
+    * When we associate an angular component with a tag this will be called the host element 
 * What are component inputs and outputs i.e. what data it needs in terms of input variables that are bound to input controls in its template and what events it will emit.
-    ** If we want our components to interact with the user we must use databinding in them
+    * If we want our components to interact with the user we must use databinding in them
 * How it draws it self and styles it self
-* What are the dependencies and providers that it depends uppon 
-    ** The template of a component will contain tags for subcomponents those components will be its dependencies. 
+* What are the dependencies and providers (services) that it depends uppon or uses. 
+    * The template of a component will contain tags for subcomponents those components will be its dependencies. 
 
 To apply a decorator to a class or one of the class members, 
 we place it above the class or member that we want to decorate and invoke
