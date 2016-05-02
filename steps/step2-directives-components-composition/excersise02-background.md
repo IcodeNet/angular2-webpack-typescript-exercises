@@ -72,7 +72,8 @@ The minimum information that angular needs to render the abover component is:
     - the `selector`
     - the `template` or `templateUrl` 
     - and the dependencies i.e the subcomponents or directives (or services that it uses).      
-    
+ 
+###The view (template) of a component is just yet another DOM tree.     
     
 ##The component selector
     
