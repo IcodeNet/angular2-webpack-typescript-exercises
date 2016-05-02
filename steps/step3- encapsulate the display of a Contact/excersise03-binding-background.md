@@ -11,7 +11,7 @@ Bindings in angular are declaratively setup.
 
 In angular the binding's source is implicitly set to the component that owns the template that contains the target html element.
 
-* So a `Source` Component will provide the data - Where teh data are coming from.
+* So a `Source` Component will provide the data - Where the data are coming from.
 * A Target HTML elemnt will receive the data   -Where the data is going.
 * And a Binding object will Sync Between the two - what keeps the two synchronised.
 
@@ -55,7 +55,7 @@ so if we have the following component:
 ```
 
 The `App` component will be the source of a binding that is declared using the `{{ expression }}`.
-The `App` component has been set as the implicit datasource that will be used for bindings inside the temlate.
+The `App` component has been set as the implicit datasource (by Angular) that will be used for bindings inside the temlate.
 
-The `<span>` element is the target of the binding that will receive the data from `App` and in particular the receive the value `contact.name`
+The `<span>` element is the target of the binding that will receive the data from `App` and in particular will receive the value `contact.name` 
  
