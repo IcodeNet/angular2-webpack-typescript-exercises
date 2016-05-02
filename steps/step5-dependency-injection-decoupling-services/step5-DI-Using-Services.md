@@ -8,7 +8,7 @@ The aim of this step is to to see how to create services and how to inject them 
 
 `CONTACT_DATA` is an implementation detail we don't want to couple inside our application's component `App`. 
 
-Instead we will create a service called `ContactsService` under `app\services\ContactsService.ts`:
+Instead we will create a service called `ContactsService` under `app\services\contacts-service.ts`:
 
 The service will implement a `getContacts()` method that  will return the array of `CONTACT_DATA`. 
 
@@ -19,7 +19,7 @@ The responsibility of getting the data has now moved for the component to the se
 
 ## Steps
 
-1. Create a `ContactsService`  
+1. Create a `ContactsService`  `class`
 2. Import `CONTACT_DATA` in the service file
 3. Create a method `getContacts()` which returns the array
 4. Add `ContactsService` provider to `ContactsApp`'s `providers` property to make the service available in your app
